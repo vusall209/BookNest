@@ -3,7 +3,7 @@ services:
   booknest:
     build: .
     ports:
-      - "8080:8080"
+      - "8585:8585"
     depends_on:
       - mysql
     environment:
@@ -19,4 +19,4 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: booknest
     ports:
-      - "7070:3306"
+      - "3306:3306"

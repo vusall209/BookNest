@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2021
+      author: VusalMammadov85
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: users_pKey
+                  name: user_id
+                  type: BIGINT
+              - column:
+                  name: user_name
+                  type: VARCHAR(255)
+              - column:
+                  name: mail
+                  type: VARCHAR(255)
+              - column:
+                  name: password
+                  type: VARCHAR(255)
